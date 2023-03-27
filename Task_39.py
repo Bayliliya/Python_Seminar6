@@ -32,9 +32,13 @@ second_array = array_filling(b, limit)
 
 print(first_array, "\n", second_array)
 
-
-for i in first_array:
-    for k in second_array:
-        if i == k:
-            first_array.remove(i)
-print(first_array)
+array_result = []
+flag = 0
+for i, num_1 in enumerate(first_array):
+    for j, num_2 in enumerate(second_array):
+        if num_1 == num_2:
+            flag = 1
+    if flag == 0:
+        array_result.append(num_1)
+    flag = 0
+print(array_result)
