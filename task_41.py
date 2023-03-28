@@ -23,10 +23,10 @@ def array_filling(a, n):
 
 number_array = array_filling(a, limit)
 print(number_array)
-count_min_neub = 0
+count = 0
 
-for i in range(1, a - 1):
+for i in range(-1, a - 1):
     if (number_array[i] > number_array[i - 1]
        and number_array[i] > number_array[i + 1]):
-        count_min_neub += 1
-print(count_min_neub)
+        count += 1
+print(count)
