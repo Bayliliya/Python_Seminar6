@@ -30,4 +30,13 @@ for i in range(a):
     for j in range(i + 1, a):
         if number_array[i] == number_array[j]:
             set_help.add(number_array[i])
-print(set_help, "\n", len(set_help))
+print(len(set_help))
+
+
+count = 0
+
+for i in range(a):
+    for j in range(i + 1, a):
+        if i != j and number_array[i] == number_array[j]:
+            count += 1
+print(f'count = {count}')
