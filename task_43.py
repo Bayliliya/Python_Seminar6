@@ -37,6 +37,6 @@ count = 0
 
 for i in range(a):
     for j in range(i + 1, a):
-        if i != j and number_array[i] == number_array[j]:
+        if number_array[i] == number_array[j]:
             count += 1
 print(f'count = {count}')
